@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d9l-KW-yjN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="q5q-cF-Ltd">
+            <objects>
+                <viewController id="d9l-KW-yjN" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YUD-2a-KQu"/>
+                        <viewControllerLayoutGuide type="bottom" id="J2g-B7-sJC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R7l-vU-LiE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXR-kc-vPe">
+                                <rect key="frame" x="0.0" y="20" width="600" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTB-v3-ECG">
+                                        <rect key="frame" x="20" y="10" width="125" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.22529129980000001" blue="0.1069592791" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="展示消息">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showMessage:" destination="d9l-KW-yjN" eventType="touchUpInside" id="ZUZ-Da-7Gv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAh-eg-eQe">
+                                        <rect key="frame" x="310" y="10" width="125" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.22529129980000001" blue="0.1069592791" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="成功">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="success:" destination="d9l-KW-yjN" eventType="touchUpInside" id="eLs-JS-hBd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phh-Fc-ms1">
+                                        <rect key="frame" x="455" y="10" width="125" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.22529129980000001" blue="0.1069592791" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="失败">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showError:" destination="d9l-KW-yjN" eventType="touchUpInside" id="Q9n-dQ-13f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eho-cP-S7y">
+                                        <rect key="frame" x="165" y="10" width="125" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.22529129980000001" blue="0.1069592791" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="隐藏消息">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hideMessage:" destination="d9l-KW-yjN" eventType="touchUpInside" id="SOC-qz-kkZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eho-cP-S7y" secondAttribute="bottom" constant="10" id="6Ud-HG-Lye"/>
+                                    <constraint firstAttribute="height" constant="50" id="9vV-h9-PjX"/>
+                                    <constraint firstItem="uTB-v3-ECG" firstAttribute="leading" secondItem="oXR-kc-vPe" secondAttribute="leading" constant="20" id="FJO-gh-wSN"/>
+                                    <constraint firstItem="Phh-Fc-ms1" firstAttribute="leading" secondItem="cAh-eg-eQe" secondAttribute="trailing" constant="20" id="Fw9-wY-VPp"/>
+                                    <constraint firstItem="uTB-v3-ECG" firstAttribute="top" secondItem="oXR-kc-vPe" secondAttribute="top" constant="10" id="N0d-ZP-5nE"/>
+                                    <constraint firstItem="eho-cP-S7y" firstAttribute="top" secondItem="oXR-kc-vPe" secondAttribute="top" constant="10" id="PWJ-cA-rkp"/>
+                                    <constraint firstAttribute="bottom" secondItem="Phh-Fc-ms1" secondAttribute="bottom" constant="10" id="RIU-Uw-2hJ"/>
+                                    <constraint firstItem="cAh-eg-eQe" firstAttribute="top" secondItem="oXR-kc-vPe" secondAttribute="top" constant="10" id="Ros-fq-f7e"/>
+                                    <constraint firstItem="cAh-eg-eQe" firstAttribute="width" secondItem="uTB-v3-ECG" secondAttribute="width" id="SaL-yY-5vh"/>
+                                    <constraint firstAttribute="bottom" secondItem="cAh-eg-eQe" secondAttribute="bottom" constant="10" id="ZbG-Sy-C6R"/>
+                                    <constraint firstItem="cAh-eg-eQe" firstAttribute="width" secondItem="eho-cP-S7y" secondAttribute="width" id="dfb-TY-o2o"/>
+                                    <constraint firstItem="cAh-eg-eQe" firstAttribute="leading" secondItem="eho-cP-S7y" secondAttribute="trailing" constant="20" id="e5P-Gd-XtQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Phh-Fc-ms1" secondAttribute="trailing" constant="20" id="gXz-nU-OUT"/>
+                                    <constraint firstItem="Phh-Fc-ms1" firstAttribute="top" secondItem="oXR-kc-vPe" secondAttribute="top" constant="10" id="rJs-BM-BtE"/>
+                                    <constraint firstAttribute="bottom" secondItem="uTB-v3-ECG" secondAttribute="bottom" constant="10" id="sbC-WH-6oc"/>
+                                    <constraint firstItem="cAh-eg-eQe" firstAttribute="width" secondItem="Phh-Fc-ms1" secondAttribute="width" id="uIl-cn-ZE8"/>
+                                    <constraint firstItem="eho-cP-S7y" firstAttribute="leading" secondItem="uTB-v3-ECG" secondAttribute="trailing" constant="20" id="xPk-q5-heR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oXR-kc-vPe" secondAttribute="trailing" id="G3v-jp-2ci"/>
+                            <constraint firstItem="oXR-kc-vPe" firstAttribute="top" secondItem="R7l-vU-LiE" secondAttribute="top" constant="20" id="W6D-xd-iof"/>
+                            <constraint firstItem="oXR-kc-vPe" firstAttribute="leading" secondItem="R7l-vU-LiE" secondAttribute="leading" id="xDm-nS-rBd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDb-BW-kIC" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
